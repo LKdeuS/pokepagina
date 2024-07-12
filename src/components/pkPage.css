@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,w_1200/ncom/en_US/articles/2024/catch-up-on-pokemon-day-festivities-including-news-about-a-new-game/1280x720_Switch_News_PD2024"); /* Cambia esta URL a la imagen de fondo que desees */
+    background-size: cover; /* Ajusta el tamaño para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat;
+  }
+  
+  .pokemon-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%; /* Ancho máximo del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .pokemon-card {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .pokemon-card .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ajusta la imagen proporcionalmente */
+    max-height: 200px; /* Altura máxima de la imagen */
+  }
+  
+  .card-body {
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .pokemon-card .card-img-top {
+      max-height: 150px; /* Reducir altura máxima en pantallas más pequeñas si es necesario */
+    }
+  }
+
